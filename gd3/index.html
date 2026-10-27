@@ -227,7 +227,27 @@ a.row:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .how h3{font-size:18px;margin-bottom:2px}.day h2 small{font:600 13px var(--body);color:var(--muted);letter-spacing:.04em;text-transform:uppercase}.blue{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;gap:8px}
 .blue h2{font-size:20px;margin:0 0 4px}.bp{display:grid;grid-template-columns:minmax(0,1fr) 40% 40px;gap:10px;align-items:center;font:600 14px var(--body)}
 .bp i{display:block;height:10px;border-radius:6px;background:currentColor;opacity:.85;max-width:100%}.bp b{text-align:right;font-family:var(--mono)}
-.bp span{min-width:0}.blue .note{margin:4px 0 0;color:var(--muted);font-size:13px}.bp:has(.s-b1) i{color:var(--b1)}.bp:has(.s-b3) i{color:var(--b3)}.bp:has(.s-b4) i{color:var(--b4)}.bp:has(.s-b6) i{color:var(--b6)}body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}</style></head><body><style>
+.bp span{min-width:0}.blue .note{margin:4px 0 0;color:var(--muted);font-size:13px}.bp:has(.s-b1) i{color:var(--b1)}.bp:has(.s-b3) i{color:var(--b3)}.bp:has(.s-b4) i{color:var(--b4)}.bp:has(.s-b6) i{color:var(--b6)}
+.thanks{margin-top:26px;display:grid;gap:12px}
+.thanks h2{font-size:24px;margin:0}
+.thanks .intro{margin:0;max-width:64ch;color:var(--muted);font-size:15.5px}
+.teams{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.team{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--b1);border-radius:12px;padding:16px 18px;display:grid;gap:10px;align-content:start}
+.team.t-a{border-top-color:#7a3fd1}
+.team h3{margin:0;font:800 19px var(--display)}
+.team .what{margin:0;font-size:14.5px;color:var(--muted)}
+.team dl{margin:0;display:flex;flex-wrap:wrap;gap:8px 22px}
+.team dt{font:600 11.5px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.team dd{margin:0;font:700 16px var(--body);color:var(--ink)}
+.team .lbl{margin:2px 0 0;font:600 11.5px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.team .mem{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.team .mem li{font:500 14px var(--body);padding:4px 10px;border:1px solid var(--line);border-radius:999px;background:var(--paper)}
+.llth{margin-top:26px;background:#0E1430;color:#fff;border-radius:14px;padding:26px 20px;text-align:center;display:grid;gap:6px;justify-items:center;position:relative;overflow:hidden}
+.llth .hx{width:44px;height:50px;background:#F5A623;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.llth .big{margin:4px 0 0;font:900 clamp(30px,7vw,46px)/1.05 var(--display);color:#F5A623;letter-spacing:-.01em}
+.llth .sm{margin:0;font:600 14px var(--body);color:#C9D1EA}
+.foot .llt{font-weight:700;color:var(--honey-ink,#B7791F)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}</style></head><body><style>
 #mhs{position:fixed;inset:0;z-index:100;background:#000080;display:grid;place-items:center;transition:opacity .5s ease}
 #mhs.out{opacity:0}
 #mhs .lg{position:relative;width:min(32vw,220px);aspect-ratio:175/200}
@@ -268,7 +288,8 @@ a.row:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <div class="how"><div><h3>Practise</h3>Tap an option: green is right, red is your pick. The explanation and slide source open underneath.</div>
 <div><h3>Tags</h3>Past paper (previous batches’ questions and this block’s midblock), AMBOSS formative (CBL sessions), High-yield (Question Bankers 224), Exam trap, Clinical case.</div>
 <div><h3>Short on time?</h3>Tap “★ Past papers only” on any lecture to see just the recalled exam questions, then do the mock exam.</div></div>
-<p class="credit"><span>Questions: Question Bankers 224 (captain Shaza Tamer · batch admin Sulaf Almesh) and AMBOSS Team 224 (captain Shahad Waleed)</span></p>
+<section class="thanks" aria-label="Thank you"><h2>Thank you</h2><p class="intro">Every question on this site started with these two teams. Hours of writing, recalling and checking so the whole batch could revise from one place. If this bank helped you, thank them, not just the site.</p><div class="teams"><article class="team t-q"><h3>Question Bankers 224</h3><p class="what">Wrote the question bank: lecture questions, past-paper recalls and the midblock set.</p><dl><div><dt>Batch admin</dt><dd>Sulaf Almesh</dd></div><div><dt>Captain</dt><dd>Shaza Tamer</dd></div></dl><p class="lbl">Team members</p><ul class="mem"><li>Olima Mahmoud</li><li>Sham Tarhou</li><li>Shahad Waleed</li><li>Sarah Emad</li><li>Shaza Tamer</li><li>Sulaf Almesh</li><li>Haidara Al-Ghmri</li><li>Mohammed Alaidarous</li><li>Kenan Aboshahada</li></ul></article><article class="team t-a"><h3>AMBOSS Team 224</h3><p class="what">Summarised every CBL session into AMBOSS-style questions with key points and option-by-option explanations.</p><dl><div><dt>Batch admin</dt><dd>Sulaf Almesh</dd></div><div><dt>Captain</dt><dd>Shahad Waleed</dd></div></dl><p class="lbl">Team members</p><ul class="mem"><li>Jana Bahasan</li><li>Raghad Aloteibi</li><li>Aleena Zobairi</li><li>Shahad Waleed</li><li>Rania Habibullah</li><li>Juri Omar</li><li>Sulaf Almesh</li><li>Mohammed Alaidarous</li></ul></article></div></section>
+<section class="llth" aria-label="Long live the hive"><span class="hx" aria-hidden="true"></span><p class="big">Long live the hive.</p><p class="sm">Med 224 · Good luck on Sunday · MedHive</p></section>
 <p class="credit"><span>MED HIVE · Question Bankers</span><b>Made by Saad Faisal · 223</b><span>All rights reserved</span></p></div>
 <script>
 (function(){
